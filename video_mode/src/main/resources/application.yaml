@@ -1,0 +1,31 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.138.223.130:3306/video_frequency?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: video_frequency
+    password: WdjGAh68bTS7MYxT
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
+  servlet:
+    multipart:
+      max-file-size: 200MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+qiniu:
+  secretKey: H6x7B9KHZa9ZZ2dCkFPJSDyUHC0QLrVv6L-dN9jD
+  bucket: wcy-sp
+  accessKey: V500XgucUjXULSpjWepAUYy-fnSrm1ctiGoweUVC
+  proxy_url: http://rtjomska1.hb-bkt.clouddn.com/

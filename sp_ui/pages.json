@@ -1,0 +1,46 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "视频资源"
+			}
+		},
+		{
+			"path": "pages/comment/comment",
+			"style": {
+				"navigationBarTitleText": "视频评论"
+			}
+		},
+		{
+			"path": "pages/video/save",
+			"style": {
+				"navigationBarTitleText": "视频上传"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#f8f8fa",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/images/video.png",
+			"selectedIconPath": "static/images/video-active.png",
+			"text": "视频播放"
+		},{
+			"pagePath": "pages/video/save",
+			"iconPath": "static/images/uplod.png",
+			"selectedIconPath": "static/images/uplud_active.png",
+			"text": "视频上传"
+		}]
+	}
+}
